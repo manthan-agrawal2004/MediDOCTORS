@@ -1,4 +1,4 @@
-'use client'
+"use client"
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
@@ -64,7 +64,7 @@ const VerificationPage = () => {
         animate="show"
         className='max-w-2xl mx-auto'
       >
-        <Card className="border-emerald-900/20">
+        <Card className="border-sky-900/20">
           <CardHeader className="text-center">
             <div className={`mx-auto p-4 ${isRejected ? "bg-red-900/20" : "bg-amber-900/20"} rounded-full mb-4 w-fit`}>
               {isRejected ? (
@@ -76,7 +76,7 @@ const VerificationPage = () => {
             <CardTitle className="text-2xl font-bold text-white">
               {isRejected ? "Verification Declined" : "Verification in Progress"}
             </CardTitle>
-            <CardDescription className="text-lg">
+            <CardDescription className="text-lg text-muted-foreground">
               {isRejected
                 ? "Unfortunately, your application needs revision"
                 : "Thank you for submitting your information"}
@@ -89,7 +89,7 @@ const VerificationPage = () => {
                 <AlertCircle className='h-5 w-5 text-red-400 mr-3 mt-0.5 flex-shrink-0' />
                 <div className="text-muted-foreground text-left">
                   <p className="mb-2">
-                    Thank you for submitting your application. We've reviewed the details, and it looks like a few important pieces of information are either missing or unclear.
+                    Thank you for submitting your application. We&apos;ve reviewed the details, and it looks like a few important pieces of information are either missing or unclear.
                     Here are some common points to check:
                   </p>
                   <ul className="list-disc pl-5 space-y-1 mb-3">
@@ -98,7 +98,7 @@ const VerificationPage = () => {
                     <li>Services or specializations are not clearly outlined</li>
                   </ul>
                   <p>
-                    We’d love to move forward once everything is complete. Kindly review and update your application, then resubmit it for consideration.
+                    We&apos;d love to move forward once everything is complete. Kindly review and update your application, then resubmit it for consideration.
                   </p>
                 </div>
               </div>
@@ -107,7 +107,7 @@ const VerificationPage = () => {
                 <AlertCircle className='h-5 w-5 text-amber-400 mr-3 mt-0.5 flex-shrink-0' />
                 <p className="text-muted-foreground text-left">
                   Your profile is currently under review by our administrative team. This usually takes 1–2 business days.
-                  You’ll receive an email notification once your account is verified.
+                  You&apos;ll receive an email notification once your account is verified.
                 </p>
               </div>
             )}
@@ -131,7 +131,7 @@ const VerificationPage = () => {
                 <Button
                   asChild
                   variant="outline"
-                  className="bg-green-600/20 border border-green-400/30 text-green-100 hover:bg-green-800/40 transition-colors"
+                  className="bg-sky-600/20 border border-sky-400/30 text-sky-100 hover:bg-sky-800/40 transition-colors"
                 >
                   <Link href='/'>Return to Home</Link>
                 </Button>

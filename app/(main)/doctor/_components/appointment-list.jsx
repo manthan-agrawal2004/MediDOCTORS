@@ -44,7 +44,7 @@ const AppointmentList = ({ appointments }) => {
               No upcoming appointments
             </h3>
             <p className="text-muted-foreground">
-              You don't have any scheduled appointments yet. Make sure you've set your availability to allow booking.
+              You don&apos;t have any scheduled appointments yet. Make sure you&apos;ve set your availability to allow booking.
             </p>
           </div>
         )}

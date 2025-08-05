@@ -134,7 +134,7 @@ const AvailabiltySetting = ({ slots }) => {
                 </h4>
                 <p className="text-muted-foreground text-sm">
                   Your availability schedule enables patients to book appointments during the specified time slots.
-                  You can modify your availability anytime. Changes won’t affect already booked appointments.
+                  You can modify your availability anytime. Changes won&apos;t affect already booked appointments.
                 </p>
               </div>
             </motion.div>

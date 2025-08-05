@@ -213,7 +213,7 @@ export function DoctorEarnings({ earnings, payouts = [] }) {
                 <Alert>
                   <AlertCircle className="h-4 w-4" />
                   <AlertDescription className="text-sm">
-                    Your payout request is being processed. You'll receive the payment once an admin approves it. Your credits will be deducted after processing.
+                    Your payout request is being processed. You&rsquo;ll receive the payment once an admin approves it. Your credits will be deducted after processing.
                   </AlertDescription>
                 </Alert>
               </div>

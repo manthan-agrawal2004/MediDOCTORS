@@ -190,17 +190,17 @@ const DoctorProfile = ({ doctor, availableDays }) => {
                             <CardContent>
                                 {totalSlots > 0 ? (
                                     <>
-                                        {!selectSlot &&
+                                        {!selectSlot && (
                                             <SlotPicker days={availableDays} onSelectSlot={handleSlotSelect} />
-                                        }
-                                        {selectSlot &&
+                                        )}
+                                        {selectSlot && (
                                             <AppoinmentForm
                                                 doctorId={doctor.id}
                                                 slot={selectSlot}
                                                 onBack={() => setSelectedSlot(null)}
                                                 onComplete={handleBookingComplete}
                                             />
-                                        }
+                                        )}
                                     </>
                                 ) : (
                                     <div className='text-center py-6'>
@@ -209,7 +209,7 @@ const DoctorProfile = ({ doctor, availableDays }) => {
                                             No available slots
                                         </h3>
                                         <p className='text-muted-foreground'>
-                                            This doctor doesn't have any available appointment slots for the next 4 days. Please check back later or try another doctor.
+                                            This doctor doesn&apos;t have any available appointment slots for the next 4 days. Please check back later or try another doctor.
                                         </p>
                                     </div>
                                 )}
