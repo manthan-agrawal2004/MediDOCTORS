@@ -95,7 +95,7 @@ const AvailabiltySetting = ({ slots }) => {
                 <h3 className="text-lg font-medium text-white mb-3">Current Availability</h3>
                 {slots.length === 0 ? (
                   <p className="text-muted-foreground">
-                    You haven't set any availability slots yet.
+                    You haven&apos;t set any availability slots yet.
                   </p>
                 ) : (
                   <div className="space-y-2">
